@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Этот сайт рассказывает о жизни Абдуллоха Абдулхамидова, его социальных сетях, образовании, достижениях и обучении в университете, а также его пути в веб-разработке для получения первого опыта работы. Сайт будет полезен тем, кто хочет найти опыт работы. Я даю много ссылок на различные источники для обучения.">
+    <meta name="keywords"
+        content="HTML, CSS, Bootstrap, JavaScript, Абдуллох Абдулхамидов, Web Development, IT, первый опыт работы в IT">
+    <meta name="author" content="Абдуллох Абдулхамидов">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Веб-Сервисы</title>
+    <link rel="icon" href="./images/profile-logo.jpg">
+    <link rel="stylesheet" href="./main-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <div class="alert alert-warning alert-dismissible d-flex align-items-center col-12" role="alert">
+        <div class="container alert-box">
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <strong><a href="#my-dream">ОБНОВЛЕНИЕ!</a></strong> <i>Смотрите последние обновления!</i>
+            <button type="button" class="btn-close d-flex align-items-center" data-bs-dismiss="alert"
+                aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-xxl fixed-top col-12" id="main-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/name-logo-2.png" alt="Веб-Изображение"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Переключить навигацию">
+                <b id="closer-x">X</b>
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#home-section">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#latest-news-section">Новости</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page"
+                            href="#education-section">Образование</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page"
+                            href="#achievements-section">Достижения</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#my-way-into-it-section" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Мир ИТ</a>
+                        <ul class="dropdown-menu border border-5 border-primary">
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#my-way-into-it-section">Мир ИТ</a>
+                            </li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#certificates-section">Сертификаты</a>
+                            </li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#portfolios-section">Портфолио</a>
+                            </li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#experience-section">Опыт</a>
+                            </li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#services-section">Услуги</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#contact-others-section">Следите
+                            за другими</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#events-section">События</a></li>
+                </ul>
+                <li class="nav-item dropdown language-selector ml-md-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-globe"></i> RU
+                    </a>
+                    <ul class="dropdown-menu border border-5 border-primary" aria-labelledby="languageDropdown"
+                        style="z-index: 110;">
+                        <li><a class="dropdown-item bg-dark border border-primary" style="color: dodgerblue;" href="#"
+                                onclick="changeLanguage('uz')">UZ</a></li>
+                        <li><a class="dropdown-item bg-dark border border-primary" style="color: dodgerblue;" href="#"
+                                onclick="changeLanguage('en')">EN</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- HOME SECTION -->
+    <div class="container">
+        <div id="home-section">
+
+            <div class="row">
+                <div class="home-section-rows col-12 col-lg-6 text-parts">
+                    <h4 class="section-welcome">ПРИВЕТ ВСЕМ!</h4>
+                    <h1 class="section-introduction">Я АБДУЛЛОХ</h1>
+                    <h3 class="section-main-position">Студент и Веб-Разработчик</h3>
+                    <h3 class="section-info">
+                        <div type="button" class="btn btn-danger"><b>ВНИМАНИЕ</b></div>
+                        Вы можете легко связаться со мной с вашими вопросами, предложениями и жалобами через одну из
+                        социальных сетей ниже. Я постараюсь ответить как можно скорее!
+                    </h3>
+
+                    <div class="home-section-social-networks">
+                        <a target="_blank" href="https://wa.me/998930523715"><i class="bi bi-whatsapp"></i></a>
+                        <a target="_blank" href="https://t.me/Aabbdduulloohhh"><i class="bi bi-telegram"></i></a>
+                        <a target="_blank" href="mailto:aabbdudulloohhh@gmail.com"><i class="bi bi-envelope"></i></a>
+                        <a target="_blank" href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7">
+                            <i class="bi bi-linkedin"></i></a>
+                        <a target="_blank" href="https://instagram.com/aabbdduulloohhh"><i
+                                class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="https://facebook.com/AbdullohAbdulxamidov"><i
+                                class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCBzLtY6ZeKjcVWqscxWNVug"><i
+                                class="bi bi-youtube"></i></a>
+                        <a target="_blank" href="https://github.com/AbdullohAbdulxamidov"><i
+                                class="bi bi-github"></i></a>
+                    </div>
+
+                    <div class="home-section-buttons">
+                        <button type="button" class="col-5 mt-4">
+                            <a href="./My_CV.pdf" target="_blank">Pезюме</a></button>
+                        <button type="button" class="button-left col-5 mt-4">
+                            <a href="https://t.me/WebDevelopmentWithAbdulloh" target="_blank">Канал</a></button>
+                        <button type="button" class="col-5 mt-4">
+                            <a href="#portfolios-section">Портфолио</a></button>
+                        <button type="button" class="button-left col-5 mt-4">
+                            <a href="#services-section">Услуги</a></button>
+                    </div>
+                </div>
+
+                <div class="home-section-rows col-11 col-lg-5 col-xl-5 col-xxl-5 mt-lg-5 mt-xl-5 mt-xxl-5">
+                    <img class="my-image img-thumbnail" src="./images/my-image.jpg" alt="Я">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / HOME SECTION -->
+
+
+
+
+
+
+    <!-- LATEST NEWS SECTION -->
+    <div class="container">
+        <div id="latest-news-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">УЗНАЙТЕ ЛЕГКО ПОСЛЕДНИЕ НОВОСТИ В МОЕЙ ЖИЗНИ.</h3>
+                <h3 class="section-main-info">Здесь вы можете узнать больше о последних новостях и событиях в моем мире.
+                </h3>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/coventry-university.jpg" class="card-img-top" alt="ковентри">
+                <div class="card-body">
+                    <h5 class="card-title">Поступление в Ковентри</h5>
+                    <p class="card-text">Я был принят в Ковентри Университет в мае на осень 2024 года с полным
+                        финансированием.</p>
+                    <a href="https://www.topuniversities.com/universities/coventry-university" class="btn btn-primary"
+                        target="_blank">Подробнее о университете</a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/LinkedIn.jpg" class="card-img-top" alt="linkedin">
+                <div class="card-body">
+                    <h5 class="card-title">Пост с наибольшим охватом</h5>
+                    <p class="card-text">На прошлой неделе мой пост в LinkedIn набрал более 2000 просмотров - лучший
+                        результат.</p>
+                    <a href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7" class="btn btn-primary"
+                        target="_blank">Ссылка на мой профиль</a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3" id="my-dream"
+                style="margin-left: 2rem;">
+                <img src="./images/dream-image.jpg" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Важная мечта</h5>
+                    <p class="card-text">Сегодня я размышлял о важной мечте. Она была о мусульманах. Я увидел Билла
+                        Гейтса и Карло Анчелотти.</p>
+                    <a href="./My_Dream.pdf" class="btn btn-primary" target="_blank">
+                        Полный PDF
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- / LATEST NEWS SECTION -->
+
+
+
+
+
+    <!-- EDUCATION SECTION -->
+    <div class="container">
+        <div id="education-section">
+
+            <div id="section-texts-part" class="mb-5 title-education">
+                <h3 class="section-main-position">ОБРАЗОВАТЕЛЬНЫЕ УЧРЕЖДЕНИЯ, В КОТОРЫХ Я УЧИЛСЯ И БУДУ УЧИТЬСЯ.</h3>
+                <h3 class="section-main-info">Специализированная средняя школа и высшая школа под управлением Агентства
+                    президентских институтов и Ковентри университет.</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-11 col-xxl-6 img-thumbnail d-inline-block education-images-box" id="section-texts-part">
+                    <div class="row">
+                        <img src="./images/coventry-university.jpg" alt="ковентри" class="col-12">
+                    </div>
+
+                    <div class="row">
+                        <img src="./images/sahrihan-high-school.jpg" alt="высшая школа" class="col-6"
+                            style="padding-right: 0;">
+                        <img src="./images/IDUM44.jpg" alt="средняя школа" class="col-6" style="padding-left: 0;">
+                    </div>
+                </div>
+
+                <div class="col-11 col-xxl-5 d-inline-block my-schools" id="section-texts-part">
+                    <h3 class="section-position pt-5 pt-xl-5 pt-xxl-0">
+                        Специализированная средняя школа № 44</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>СРЕДНЯЯ ШКОЛА</b></button>
+                        <span class="dodgerblue">Между 2017 и 2022 годами</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> Специально изучал математику и английский язык. <br>
+                        <i class="bi bi-patch-check-fill"></i> Получен сертификат базового среднего образования.
+                    </h3>
+
+                    <h3 class="section-position">Шахриханская специализированная высшая школа</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>ВЫСШАЯ ШКОЛА</b></button>
+                        <span class="dodgerblue">Между 2022 и 2024 годами</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> Получены сертификаты IELTS и SAT. <br>
+                        <i class="bi bi-patch-check-fill"></i> Специально изучал фронтенд-разработку. <br>
+                        <i class="bi bi-patch-check-fill"></i> Получен аттестат о завершении школы в мае.
+                    </h3>
+
+                    <h3 class="section-position">Бакалавриат в КОВЕНТРИ УНИВЕРСИТЕТЕ</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>УНИВЕРСИТЕТ</b></button>
+                        <span class="dodgerblue">Между 2024 и 2028 годами</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> Получение степени бакалавра информационных технологий с
+                        отличием. <br>
+                        <i class="bi bi-patch-check-fill"></i> Улучшение знаний, получение опыта. <br>
+                        <i class="bi bi-patch-check-fill"></i> Получение международного ИТ-сертификата. <br>
+                        <i class="bi bi-patch-check-fill"></i> Выпуск и получение степени бакалавра.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- / EDUCATION SECTION -->
+
+
+
+
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <div class="container">
+        <div id="achievements-section">
+            <div id="section-texts-part">
+                <h3 class="section-main-position">МОИ ДОСТИЖЕНИЯ В ПОСТУПЛЕНИИ В АМЕРИКАНСКИЕ УНИВЕРСИТЕТЫ</h3>
+                <h3 class="section-main-info">Здесь вы можете увидеть слайды с высокоранжированными американскими
+                    университетами, куда я был принят с стипендиями.</h3>
+            </div>
+
+            <div id="carouselExampleInterval" data-bs-ride="carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Слайд 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Слайд 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Слайд 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Слайд 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/university/asu.jpg" class="d-block w-100" alt="уни 1">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                УНИВЕРСИТЕТ АРИЗОНЫ</h5>
+                            <p class="my-slide-info d-block">
+                                Принят в этот университет, входящий в топ-200 мирового рейтинга.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/arizona.png" class="d-block w-100" alt="уни 2">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                УНИВЕРСИТЕТ АРИЗОНЫ</h5>
+                            <p class="my-slide-info d-block">
+                                Стипендия на сумму 92,000 долларов на 4 года.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/florida-tech.jpg" class="d-block w-100" alt="уни 3">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                ФЛОРИДСКИЙ ИНСТИТУТ ТЕХНОЛОГИЙ</h5>
+                            <p class="my-slide-info d-block">
+                                Стипендия на сумму 50,000 долларов на 4 года.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- / ACHIEVEMENTS SECTION -->
+
+
+
+
+
+    <!-- MY WAY INTO IT SECTION -->
+    <div class="container">
+        <div id="my-way-into-it-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">МОЙ ПУТЬ В МИР ИТ</h3>
+                <h3 class="section-main-info">
+                    Здесь вы можете узнать, как я вошел в мир ИТ и начал изучать основы информационных технологий.
+                </h3>
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <img class="col-5" src="./images/terobayt-lc.png" alt="теробайт-лк">
+                <img class="col-5" src="./images/Front_End_Crs.jpg" alt="сертификат" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Terobayt LC, Андижан, Узбекистан, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>ПЕРВЫЙ ШАГ</b></button>
+                    <span class="dodgerblue">С февраля по июль</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> Изучал MS Word и Excel на курсе компьютерной грамотности.
+                    <br>
+                    <i class="bi bi-patch-check-fill"></i> Изучал HTML, CSS, JS и Python на курсе Front-End.
+                </h3>
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Great Learning & Skill UP, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>ВТОРОЙ ШАГ</b></button>
+                    <span class="dodgerblue">С июня по сентябрь</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> Изучал языки HTML и CSS от Great Learning. <br>
+                    <i class="bi bi-patch-check-fill"></i> Изучал JavaScript и React JS от Skill UP.
+                </h3>
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5" id="my-courses-images">
+                <img class="col-5" src="./images/simpli-learn.jpg" alt="теробайт-лк">
+                <img class="col-5" src=".//images/great-learn.jpg" alt="сертификат" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <img class="col-5" src="./images/sammi.jpg" alt="самми-ак">
+                <img class="col-5" src="./images/sammi-courses.png" alt="курсы" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Sammi Academy, Узбекистан, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>ТРЕТИЙ ШАГ</b></button>
+                    <span class="dodgerblue">С августа по ноябрь</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> Планирую изучить JS, React JS и React Native под руководством
+                    Самара Бадриддинова. <br>
+                    <i class="bi bi-patch-check-fill"></i> Планирую изучить TypeScript, Vue JS и Node JS под
+                    руководством Самара Бадриддинова.
+                </h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- / MY WAY INTO IT SECTION -->
+
+
+
+
+
+    <!-- IT CERTIFICATES SECTION -->
+    <div class="container">
+
+        <div id="certificates-section">
+            <div id="section-texts-part">
+                <h3 class="section-main-position">ПОЛУЧЕННЫЕ СЕРТИФИКАТЫ В ИТ.</h3>
+                <h3 class="section-main-info">
+                    Здесь вы можете узнать о моем пути в ИТ и начать изучать ИТ-основы.
+                </h3>
+            </div>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary">
+                <b>
+                    <a href="https://t.me/WebDevelopmentWithAbdulloh" style="text-decoration: none; color: #fff;"
+                        target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        МОЙ ТЕЛЕГРАМ-КАНАЛ
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b>
+            </button><br><br>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary">
+                <b>
+                    <a href="https://t.me/Abdulloh_all_certificates" style="text-decoration: none; color: #fff;"
+                        target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        МОИ СЕРТИФИКАТЫ
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b>
+            </button>
+
+            <div id="carouselExampleInterval" data-bs-ride="carousel" class="carousel slide mt-5">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Слайд 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Слайд 4"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/certificates/Web_Develop.jpg" class="d-block w-100" alt="сертификат 1">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-info-2 d-none d-md-block">
+                                СЕРТИФИКАТ ПО ВЕБ-РАЗРАБОТКЕ</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/Front_End_Crs.jpg" class="d-block w-100" alt="сертификат 2">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                FRONT-END ВЕБ-РАЗРАБОТКА</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- / IT CERTIFICATES SECTION -->
+
+
+
+
+
+    <!-- MY PORTFOLIOS SECTION -->
+    <div class="container">
+        <div id="portfolios-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">МОИ ПОРТФОЛИО И ПРОЕКТЫ, КОТОРЫЕ Я СДЕЛАЛ ЛИЧНО И НА КУРСАХ.</h3>
+                <h3 class="section-main-info">
+                    Я создал множество проектов. Сейчас просто смотрите и наслаждайтесь.
+                </h3>
+            </div>
+
+            <div class="row portfolios-videos-section">
+                <video src="./portfolio-videos/Portfolio1.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio2.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio3.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio4.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio5.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio6.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio7.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio8.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio9.mp4"
+                    class="col-12 col-md-6 col-xl-4 pt-4 d-md-none d-lg-none d-xl-block" controls></video>
+            </div>
+
+        </div>
+    </div>
+    <!-- / MY PORTFOLIOS SECTION -->
+
+
+
+
+
+
+    <!-- EXPERIENCE SECTION -->
+    <div class="container">
+        <div id="experience-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">МОЙ ОПЫТ РАБОТЫ И ПРАКТИКИ В ИТ.</h3>
+                <h3 class="section-main-info">
+                    На данный момент у меня есть примерно 300 часов опыта работы в Code Camp.
+                </h3>
+            </div>
+
+            <div class="col-11 col-lg-6 col-xl-6 col-xxl-6 img-thumbnail d-inline-block mt-3" id="section-texts-part"
+                style="float: left;">
+                <img src="./images/freecodecamp.png" alt="freecodecamp" class="col-12">
+                <h3 class="section-info d-none d-lg-block d-xl-none">
+                    <span><i class="bi bi-exclamation-square-fill"></i> Учитесь через практику</span> <br>
+                    <span><i class="bi bi-exclamation-square-fill"></i> Я рекомендую этот курс</span> <br>
+                    <span><i class="bi bi-exclamation-square-fill"></i> Попробуйте: https://www.freecodecamp.org</span>
+                    <br>
+                </h3>
+            </div>
+
+            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 d-inline-block experience-section-2 mt-3"
+                id="section-texts-part">
+                <h3 class="section-position">
+                    Опыт работы в Code Camp</h3>
+                <h3 class="section-info" style="width: 100%;">
+                    <button type="button" class="btn btn-success"><b>ОПЫТ</b></button>
+                    <span class="dodgerblue">Лето 2024 года</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> Созданы привлекательные портфолио.</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> Глубоко изучены HTML и CSS.</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> 300 часов опыта работы.</span> <br>
+                    <span class="d-xl-none d-xxl-block">
+                        <i class="bi bi-patch-check-fill"></i> Сертификат об окончании курса. <br>
+                    </span>
+                    <br>
+                    <img src="./images/experience.png" alt="сертификат о практике" style="width: 100%;"
+                        class="d-inline-block">
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- / EXPERIENCE SECTION -->
+
+
+
+
+
+
+    <!-- MY SERVICES SECTION -->
+    <div class="container">
+        <div id="services-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">МОИ УСЛУГИ - ПРЕДЛАГАЮ ИНДИВИДУАЛЬНО И НА КУРСАХ.</h3>
+                <h3 class="section-main-info">
+                    Я готов создать впечатляющие веб-сайты и анимации специально для вас!
+                </h3>
+            </div>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary"><b>
+                    <a href="https://t.me/Aabbdduulloohhh" style="text-decoration: none; color: #fff;" target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        СВЯЖИТЕСЬ СО МНОЙ
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b></button><br><br>
+
+            <div class="row mt-3">
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-1.png" alt="проекты">
+                </div>
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-2.png" alt="проекты">
+                </div>
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-3.png" alt="проекты">
+                </div>
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-4.png" alt="проекты">
+                </div>
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-5.png" alt="проекты">
+                </div>
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-6.png" alt="проекты">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / MY SERVICES SECTION -->
+
+
+
+
+
+
+    <!-- CONTACT WITH OTHER DEVELOPERS SECTION -->
+    <div class="container">
+        <div id="contact-others-section" class="container">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">ВЫ МОЖЕТЕ ЛЕГКО СЛЕДИТЬ ЗА ЗНАМЕНИТЫМИ ЛЮДЬМИ В ИТ-СФЕРЕ УЗБЕКИСТАНА.
+                </h3>
+                <h3 class="section-main-info">
+                    Следите за ними и смотрите их онлайн-уроки через социальные платформы.
+                </h3>
+            </div><br>
+
+            <div class="row coders-section-box">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div>
+                        <img class="col-3" src="./images/web-developers/saud-abdulwahed.jpg" alt="">
+                        <h3 class="coder-name col-12">С. Абдулвахед</h3> <br>
+                        <p class="coder-position col-11">Специалист по кибербезопасности</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/saudabdulwahed"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/saudabdulwahed">
+                                <i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SaudAbdulwahed">
+                                <i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/anvar-narzullayev.jpg" alt="">
+                        <h3 class="coder-name col-12">А. Нарзуллаев</h3> <br>
+                        <p class="coder-position col-11">Старший научный сотрудник</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/sariqdev"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://facebook.com/sariqdev">
+                                <i class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@Sariqdev">
+                                <i class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="https://github.com/anvarnarz"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/botir-ziyatov.jpg" alt="">
+                        <h3 class="coder-name col-12">Б. Зиятов</h3> <br>
+                        <p class="coder-position col-11">Датасайнтист</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/botirziyatov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/botirziyatov">
+                                <i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@BotirZiyatov">
+                                <i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/said-arislonov.jpg" alt="">
+                        <h3 class="coder-name col-12">С. Арислонов</h3> <br>
+                        <p class="coder-position col-11">ИТ-директор</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/saidbekarislonov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/saidbekarislonov">
+                                <i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SaidbekArislonov">
+                                <i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/samar-badriddinov.png" alt="">
+                        <h3 class="coder-name col-12">С. Бадриддинов</h3> <br>
+                        <p class="coder-position col-11">Фулл-стек разработчик</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/samarbadriddinov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/samarbadriddinov">
+                                <i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SamarBadriddinov">
+                                <i class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="https://www.github.com/samarbadriddin0v">
+                                <i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/ulugbek-samigjonov.jpg" alt="">
+                        <h3 class="coder-name col-12">У. Самигжонов</h3> <br>
+                        <p class="coder-position col-11">Веб-разработчик</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/ulugbeksamigjonov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/ulugbek-samigjonov">
+                                <i class="bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/ulugbeksamigjonov">
+                                <i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Ulugbek-Samigjonov-109436270953900">
+                                <i class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@UlugbekSamigjonov">
+                                <i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / CONTACT WITH OTHER DEVELOPERS SECTION -->
+
+
+
+
+
+
+
+    <!-- EVENTS SECTION -->
+    <div class="container">
+        <div id="events-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">ЛЕГКО УЗНАВАЙТЕ О ВАЖНЫХ ПРЕДСТОЯЩИХ СОБЫТИЯХ.</h3>
+                <h3 class="section-main-info">Здесь вы можете узнать о предстоящих важных событиях в моем образовании и
+                    карьере.</h3>
+            </div>
+
+            <!-- Event Card 1 -->
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="событие">
+                <div class="card-body">
+                    <h5 class="card-title">Название события</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">Ссылка на сайт</a>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="событие">
+                <div class="card-body">
+                    <h5 class="card-title">Название события</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">Ссылка на сайт</a>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="событие">
+                <div class="card-body">
+                    <h5 class="card-title">Название события</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">Ссылка на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / EVENTS SECTION -->
+
+
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <div class="col-12 mt-5" id="my-footer-section">
+
+        <button class="to-top-btn d-none d-lg-block d-xl-block d-xxl-block">
+            <a href="#home-section">ВВЕРХ</a></button>
+
+        <div class="footer-section-social-networks">
+            <a target="_blank" href="https://wa.me/998930523715" class="whatsapp d-none d-sm-block">
+                <i class="bi bi-whatsapp"></i></a>
+
+            <a target="_blank" href="https://t.me/Aabbdduulloohhh" class="telegram">
+                <i class="bi bi-telegram"></i></a>
+
+            <a target="_blank" href="mailto:aabbdudulloohhh@gmail.com" class="mail d-none d-sm-block">
+                <i class="bi bi-envelope"></i></a>
+
+            <a target="_blank" href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7" class="linkedin">
+                <i class="bi bi-linkedin"></i></i></a>
+
+            <a target="_blank" href="https://instagram.com/aabbdduulloohhh" class="instagram">
+                <i class="bi bi-instagram"></i></a>
+
+            <a target="_blank" href="https://facebook.com/AbdullohAbdulxamidov" class="facebook d-none d-sm-block">
+                <i class="bi bi-facebook"></i></a>
+
+            <a target="_blank" href="https://www.youtube.com/channel/UCBzLtY6ZeKjcVWqscxWNVug" class="youtube">
+                <i class="bi bi-youtube"></i></a>
+
+            <a target="_blank" href="https://github.com/AbdullohAbdulxamidov" class="github d-none d-sm-block">
+                <i class="bi bi-github"></i></a>
+        </div>
+
+        <div class="row" id="footer-menubar">
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>ГЛАВНАЯ</li>
+                <li><a href="#latest-news-section">НОВОСТИ</a></li>
+                <li><a href="#education-section">ОБРАЗОВАНИЕ</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>ДОСТИЖЕНИЯ</li>
+                <li><a href="#achievements-section">ДОСТИЖЕНИЯ</a></li>
+                <li><a href="#my-way-into-it-section">СЕРТИФИКАТЫ</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>МОЙ ИТ МИР</li>
+                <li><a href="#my-way-into-it-section">МОЙ ИТ МИР</a></li>
+                <li><a href="#portfolios-section">ПОРТФОЛИО</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>ОПЫТ</li>
+                <li><a href="#experience-section">ОПЫТ</a></li>
+                <li><a href="#services-section">УСЛУГИ</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>ОБЩЕЕ</li>
+                <li><a href="#contact-others-section">СЛЕДИТЕ ЗА ДРУГИМИ</a></li>
+                <li><a href="#events-section">СОБЫТИЯ</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li style="color: orangered;">ПАРТНЕРЫ</li>
+                <li style="color: #14f500;">АГРОБАНК</li>
+                <li style="color: #00b1f1;">КОВЕНТРИ У</li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom col-12">
+            Авторские права &copy; 2024 Личный веб-сайт
+        </div>
+
+    </div>
+    <!-- / FOOTER SECTION -->
+
+
+
+
+
+
+    <!-- JavaScript codes -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

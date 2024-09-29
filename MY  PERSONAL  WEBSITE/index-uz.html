@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Ushbu veb-sayt Abdulxamidov Abdullohning hayoti, ijtimoiy tarmoqlari, ta'limi, yutuqlari va universitetdagi o'qishlari hamda Web Dasturlash sohasida birinchi ish tajribasini topish yo'li haqida. Ushbu veb-sayt ish tajribasini izlayotganlar uchun ham foydali. Men turli manbalardan o'rganish uchun ko'plab havolalarni taqdim etaman.">
+    <meta name="keywords"
+        content="HTML, CSS, Bootstrap, JavaScript, Abdulloh Abdulkhamidov, Veb Dasturlash, IT sohasida birinchi ish tajribasini topish">
+    <meta name="author" content="Abdulloh Abdulkhamidov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Web Services</title>
+    <!-- Veb sahifaga belgi qo'shish -->
+    <link rel="icon" href="./images/profile-logo.jpg">
+    <!-- Tashqi CSS faylini HTML bilan ulash -->
+    <link rel="stylesheet" href="./main-style.css">
+    <!-- Bootstrap CSS bilan ulash -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap belgilarini qo'shish -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+
+    <!-- OGIRISH XABARI -->
+    <div class="alert alert-warning alert-dismissible d-flex align-items-center col-12" role="alert">
+        <div class="container alert-box">
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <strong><a href="#my-dream">YANGILIK!</a></strong> <i>Oxirgi yangiliklarni ko'ring!</i>
+            <button type="button" class="btn-close d-flex align-items-center" data-bs-dismiss="alert"
+                aria-label="Yopish"></button>
+        </div>
+    </div>
+    <!-- /OGIRISH XABARI -->
+
+
+
+
+
+    <!-- NAVBAR BO'LIMI -->
+    <nav class="navbar navbar-expand-xxl fixed-top col-12" id="main-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/name-logo-2.png" alt="Veb tasvir"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Navigatsiyani almashtirish">
+                <b id="closer-x">X</b>
+                <i class="navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#home-section">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#latest-news-section">So'nggi
+                            yangiliklar</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#education-section">Ta'lim</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page"
+                            href="#achievements-section">Yutuqlar</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#my-way-into-it-section" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Mening IT Dunyom</a>
+
+                        <ul class="dropdown-menu border border-5 border-primary">
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#my-way-into-it-section">Mening IT Dunyom</a></li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#certificates-section">Sertifikatlar</a></li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#portfolios-section">Portfoliolar</a></li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#experience-section">Tajriba</a></li>
+                            <li><a class="dropdown-item bg-dark border border-primary"
+                                    href="#services-section">Xizmatlar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page"
+                            href="#contact-others-section">Boshqalarni kuzatish</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#events-section">Voqealar</a>
+                    </li>
+                </ul>
+
+                <!-- HTMLda til tanlash menyusi -->
+                <li class="nav-item dropdown language-selector ml-md-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-globe"></i> UZ
+                    </a>
+                    <ul class="dropdown-menu border border-5 border-primary" aria-labelledby="languageDropdown"
+                        style="z-index: 110;">
+                        <li><a class="dropdown-item bg-dark border border-primary" style="color: dodgerblue;" href="#"
+                                onclick="changeLanguage('en')">EN</a></li>
+                        <li><a class="dropdown-item bg-dark border border-primary" style="color: dodgerblue;" href="#"
+                                onclick="changeLanguage('ru')">RU</a></li>
+                    </ul>
+                </li>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- / NAVBAR BO'LIMI -->
+
+
+
+
+
+    <!-- BOSH SAHIFA BO'LIMI -->
+    <div class="container">
+        <div id="home-section">
+
+            <div class="row">
+                <div class="home-section-rows col-12 col-lg-6 text-parts">
+                    <h4 class="section-welcome">SALOM, HAMMA!</h4>
+                    <h1 class="section-introduction">MEN ABDULLOHMAN</h1>
+                    <h3 class="section-main-position">Talaba va Veb Dasturchi</h3>
+                    <h3 class="section-info">
+                        <div type="button" class="btn btn-danger"><b>OGOHLIK</b></div>
+                        Savollaringiz, takliflaringiz va shikoyatlaringizni quyidagi ijtimoiy tarmoqlar orqali menga
+                        osongina yetkazishingiz mumkin. Men imkon qadar tezroq xabarlaringizga javob beraman!!!
+                    </h3>
+
+                    <div class="home-section-social-networks">
+                        <a target="_blank" href="https://wa.me/998930523715"><i class="bi bi-whatsapp"></i></a>
+                        <a target="_blank" href="https://t.me/Aabbdduulloohhh"><i class="bi bi-telegram"></i></a>
+                        <a target="_blank" href="mailto:aabbdudulloohhh@gmail.com"><i class="bi bi-envelope"></i></a>
+                        <a target="_blank" href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a target="_blank" href="https://instagram.com/aabbdduulloohhh"><i
+                                class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="https://facebook.com/AbdullohAbdulxamidov"><i
+                                class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCBzLtY6ZeKjcVWqscxWNVug"><i
+                                class="bi bi-youtube"></i></a>
+                        <a target="_blank" href="https://github.com/AbdullohAbdulxamidov"><i
+                                class="bi bi-github"></i></a>
+                    </div>
+
+                    <div class="home-section-buttons">
+                        <button type="button" class="col-5 mt-4"><a href="./My_CV.pdf" target="_blank">CV ko'rish</a></button>
+                        <button type="button" class="button-left col-5 mt-4"><a
+                                href="https://t.me/WebDevelopmentWithAbdulloh" target="_blank">Kanal</a></button>
+                        <button type="button" class="col-5 mt-4"><a href="#portfolios-section">Portfoliolar</a></button>
+                        <button type="button" class="button-left col-5 mt-4"><a
+                                href="#services-section">Xizmatlar</a></button>
+                    </div>
+                </div>
+
+                <div class="home-section-rows col-11 col-lg-5 col-xl-5 col-xxl-5 mt-lg-5 mt-xl-5 mt-xxl-5">
+                    <img class="my-image img-thumbnail" src="./images/my-image.jpg" alt="men">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / BOSH SAHIFA BO'LIMI -->
+
+
+
+
+
+    <!-- SO'NGI YANGILIKLAR BO'LIMI -->
+    <div class="container">
+        <div id="latest-news-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">Mening hayotimdagi so'nggi yangiliklardan oson xabardor bo'ling.</h3>
+                <h3 class="section-main-info">Bu yerda mening dunyomdagi so'nggi voqealar va yangiliklardan xabardor
+                    bo'lishingiz mumkin.</h3>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/coventry-university.jpg" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Coventryga qabul</h5>
+                    <p class="card-text">2024 yil kuzida to'liq moliyalashtirilgan stipendiya bilan Coventry
+                        Universitetiga qabul qilindim.</p>
+                    <a href="https://www.topuniversities.com/universities/coventry-university" class="btn btn-primary"
+                        target="_blank">
+                        Universitet haqida
+                    </a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/LinkedIn.jpg" class="card-img-top" alt="linkedin">
+                <div class="card-body">
+                    <h5 class="card-title">Eng yaxshi post</h5>
+                    <p class="card-text">O'tgan hafta LinkedIn-da mening postim 2000 dan ortiq ko'rishlar oldi - Eng
+                        yaxshi natija.</p>
+                    <a href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7" class="btn btn-primary"
+                        target="_blank">
+                        Profilga havola
+                    </a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3" id="my-dream"
+                style="margin-left: 2rem;">
+                <img src="./images/dream-image.jpg" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Muhim Tush</h5>
+                    <p class="card-text">Bugun men muhim tush o'ko'rdim. U musulmonlar haqida edi. Men Bill Gates va Karlo Anchelottini ko'rdim.</p>
+                    <a href="./My_Dream.pdf" class="btn btn-primary" target="_blank">
+                        To'liq PDF
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- / SO'NGI YANGILIKLAR BO'LIMI -->
+
+
+
+
+
+
+    <!-- TA'LIM BO'LIMI -->
+    <div class="container">
+        <div id="education-section">
+
+            <div id="section-texts-part" class="mb-5 title-education">
+                <h3 class="section-main-position">MEN O'QIGAN VA O'QIYOTGAN TA'LIM MUASSASALARI.</h3>
+                <h3 class="section-main-info">Maxsus o'rta maktab va Prezident ta'lim muassasalari agentligi
+                    tasarrufidagi maktab va Coventry Universiteti.</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-11 col-xxl-6 img-thumbnail d-inline-block education-images-box" id="section-texts-part">
+                    <div class="row">
+                        <img src="./images/coventry-university.jpg" alt="coventry" class="col-12">
+                    </div>
+
+                    <div class="row">
+                        <img src="./images/sahrihan-high-school.jpg" alt="high" class="col-6" style="padding-right: 0;">
+                        <img src="./images/IDUM44.jpg" alt="secondary" class="col-6" style="padding-left: 0;">
+                    </div>
+                </div>
+
+                <div class="col-11 col-xxl-5 d-inline-block my-schools" id="section-texts-part">
+                    <h3 class="section-position pt-5 pt-xl-5 pt-xxl-0">
+                        44-sonli Maxsus o'rta maktab</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>O'RTA MAKTAB</b></button>
+                        <span class="dodgerblue">2017 - 2022 yillarda</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> Matematika va Ingliz tilini chuqur o'rgandim. <br>
+                        <i class="bi bi-patch-check-fill"></i> O'rta ta'lim haqida sertifikat.
+                    </h3>
+
+                    <h3 class="section-position">Sahrihan Maxsus o'rta maktabi</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>YUQORI MAKTAB</b></button>
+                        <span class="dodgerblue">2012 - 2024 yillarda</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> IELTS va SAT sertifikatlarini qo'lga kiritdim. <br>
+                        <i class="bi bi-patch-check-fill"></i> Front-End Dasturlashni o'rgandim. <br>
+                        <i class="bi bi-patch-check-fill"></i> 2024 yilning may oyida maktabni tamomladim.
+                    </h3>
+
+                    <h3 class="section-position">Coventry Universitetida Bakalavr</h3>
+                    <h3 class="section-info">
+                        <button type="button" class="btn btn-success"><b>UNIVERSITET</b></button>
+                        <span class="dodgerblue">2024 - 2028 yillarda</span> <br>
+                        <i class="bi bi-patch-check-fill"></i> 2024 - 2028 yillarda IT bo'yicha BSc (Honors) darajasi.
+                        <br>
+                        <i class="bi bi-patch-check-fill"></i> Bilimimni oshirish, tajriba orttirish. <br>
+                        <i class="bi bi-patch-check-fill"></i> Xalqaro IT sertifikatini qo'lga kiritish. <br>
+                        <i class="bi bi-patch-check-fill"></i> Bakalavr darajasini tamomlash va qo'lga kiritish.
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- / TA'LIM BO'LIMI -->
+
+
+
+
+
+    <!-- YUTUQLAR BO'LIMI -->
+    <div class="container">
+        <div id="achievements-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING AMERIKA UNIVERSITETLARIGA KIRISHDA ERISHGAN YUTUQLARIM</h3>
+                <h3 class="section-main-info">Bu yerda mening yuqori reytingli Amerika universitetlariga stipendiya
+                    bilan qabul qilinganlarimni ko'rishingiz mumkin.</h3>
+            </div>
+
+            <div id="carouselExampleInterval" data-bs-ride="carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="1-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="2-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="3-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="4-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="5-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="6-slayd"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/university/asu.jpg" class="d-block w-100" alt="uni 1">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                ARIZONA DAVLAT UNIVERSITETI</h5>
+                            <p class="my-slide-info d-block">
+                                Dunyo miqyosida eng yaxshi 200 talikka kiruvchi universitetga qabul qildim</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/arizona.png" class="d-block w-100" alt="uni 2">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                ARIZONA UNIVERSITETI</h5>
+                            <p class="my-slide-info d-block">
+                                4 yil davomida $92,000 qiymatidagi stipendiya sohibi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/florida-tech.jpg" class="d-block w-100" alt="uni 3">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                FLORIDA TEXNOLOGIYA INSTITUTI</h5>
+                            <p class="my-slide-info d-block">
+                                4 yil davomida $50,000 qiymatidagi stipendiya sohibi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/missouri.png" class="d-block w-100" alt="uni 4">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                MISSURI TEXNOLOGIYA UNIVERSITETI</h5>
+                            <p class="my-slide-info d-block">
+                                Bir yil davomida $15,000 qiymatidagi stipendiya sohibi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/nyit.png" class="d-block w-100" alt="uni 5">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                N'YU-YORK TEXNOLOGIYA INSTITUTI</h5>
+                            <p class="my-slide-info d-block">
+                                4 yil davomida $112,000 qiymatidagi stipendiya sohibi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/university/jacksonville.jpg" class="d-block w-100" alt="uni 6">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-name d-none d-lg-block d-xl-block d-xxl-block">
+                                JEKSONVILL UNIVERSITETI</h5>
+                            <p class="my-slide-info d-block">
+                                4 yil davomida $140,000 qiymatidagi stipendiya sohibi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Oldingi</span>
+                </button>
+                <button class="carousel-control-next" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Keyingi</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- / YUTUQLAR BO'LIMI -->
+
+
+
+
+
+    <!-- MENING IT DUNYOMGA KIRISH YO'LIM -->
+    <div class="container">
+        <div id="my-way-into-it-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING IT DUNYOMGA KIRISH YO'LIM</h3>
+                <h3 class="section-main-info">
+                    Bu yerda mening IT sohasiga qanday kirganim va IT asoslarini o'rganishni boshlaganimni bilib
+                    olishingiz mumkin.
+                </h3>
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <img class="col-5" src="./images/terobayt-lc.png" alt="terobayt-lc">
+                <img class="col-5" src="./images/Front_End_Crs.jpg" alt="sertifikat" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Terobayt LC, Andijon, O'zbekiston, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>BIRINCHI QADAM</b></button>
+                    <span class="dodgerblue">Fevraldan Iyulgacha</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> Kompyuter Savodxonligi kursida MS Word va Excel dasturlarini
+                    o'rgandim.
+                    <br>
+                    <i class="bi bi-patch-check-fill"></i> Front-End kursida HTML & CSS & JS & Python tillarini
+                    o'rgandim.
+                </h3>
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Great Learning & Skill UP, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>IKKINCHI QADAM</b></button>
+                    <span class="dodgerblue">Iyun oyidan Sentyabr oyigacha</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> Great Learning tomonidan HTML va CSS tillarini o'rgandim.
+                    <br>
+                    <i class="bi bi-patch-check-fill"></i> Skill UP tomonidan JavaScript va React JS tillarini
+                    o'rgandim.
+                </h3>
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5" id="my-courses-images">
+                <img class="col-5" src="./images/simpli-learn.jpg" alt="terobayt-lc">
+                <img class="col-5" src=".//images/great-learn.jpg" alt="sertifikat" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-images col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <img class="col-5" src="./images/sammi.jpg" alt="sammi-ac">
+                <img class="col-5" src="./images/sammi-courses.png" alt="kurslar" style="padding-left: 3rem;">
+            </div>
+
+            <div class="my-entrance-info col-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                <h3 class="section-position">
+                    Sammi Academy, O'zbekiston, 2024</h3>
+                <h3 class="section-info">
+                    <button type="button" class="btn btn-success"><b>UCHINCHI QADAM</b></button>
+                    <span class="dodgerblue">Avgust oyidan Noyabr oyigacha</span> <br>
+                    <i class="bi bi-patch-check-fill"></i> JavaScript & React JS & React Native dasturlarini Sammi
+                    Academy tomonidan o'rganaman.
+                    <br>
+                    <i class="bi bi-patch-check-fill"></i> TypeScript & Vue JS & Node JS dasturlarini Sammi Academy
+                    tomonidan o'rganaman.
+                </h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- / MENING IT DUNYOMGA KIRISH YO'LIM -->
+
+
+
+
+
+    <!-- IT SERTIFIKATLARI BO'LIMI -->
+    <div class="container">
+
+        <div id="certificates-section">
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING IT SOHASIDAGI SERTIFIKATLARIM.</h3>
+                <h3 class="section-main-info">
+                    Bu yerda mening IT sohasiga qanday kirganim va IT asoslarini o'rganishni boshlaganimni bilib
+                    olishingiz mumkin.
+                </h3>
+            </div>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary">
+                <b>
+                    <a href="https://t.me/WebDevelopmentWithAbdulloh" style="text-decoration: none; color: #fff;"
+                        target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        TELEGRAM KANALIMNI KO'RISH
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b>
+            </button><br><br>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary">
+                <b>
+                    <a href="https://t.me/Abdulloh_all_certificates" style="text-decoration: none; color: #fff;"
+                        target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        BARCHA SERTIFIKATLARIMNI KO'RISH
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b>
+            </button>
+
+
+            <div id="carouselExampleInterval" data-bs-ride="carousel" class="carousel slide mt-5">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="1-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="2-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="3-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="4-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="5-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="6-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="7-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                        aria-label="8-slayd"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                        aria-label="9-slayd"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/certificates/Web_Develop.jpg" class="d-block w-100" alt="sertifikat 1">
+                        <div class="carousel-caption">
+                            <h5 class="my-slide-info-2 d-none d-md-block">
+                                VEB DASTURLASH SERTIFIKATI</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/Front_End_Crs.jpg" class="d-block w-100" alt="sertifikat 2">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                FRONT-END VEB DASTURLASH</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/HTML-2.png" class="d-block w-100" alt="sertifikat 3">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                HTML KURSINI TAMOMLASH SERTIFIKATI</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/CSS-2.png" class="d-block w-100" alt="sertifikat 4">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                CSS KURSINI TAMOMLASH SERTIFIKATI</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/Intro_JS.png" class="d-block w-100" alt="sertifikat 5">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                JAVASCRIPT KURSINI TAMOMLASH SERTIFIKATI</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/Practice.png" class="d-block w-100" alt="sertifikat 6">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                AMALIYOT LOYIHASI SERTIFIKATI</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/certificates/Time_Manage.png" class="d-block w-100" alt="sertifikat 7">
+                        <div class="carousel-caption">
+                            <p class="my-slide-info-2 d-none d-md-block">
+                                VAQTNI BOSHQARISH KURSI SERTIFIKATI</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Oldingi</span>
+                </button>
+                <button class="carousel-control-next" id="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Keyingi</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- / IT SERTIFIKATLARI BO'LIMI -->
+
+
+
+
+
+    <!-- PORTFOLIOLAR BO'LIMI -->
+    <div class="container">
+        <div id="portfolios-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING PORTFOLIOLARIM VA LOYIHALARIM - SHAXSAN YASAGANIM VA KURSLARDA
+                    ISHLAGANIM.</h3>
+                <h3 class="section-main-info">
+                    Men ko'plab loyihalarni yaratdim. Hozircha, tomosha qiling va zavqlaning.
+                </h3>
+            </div>
+
+            <div class="row portfolios-videos-section">
+                <video src="./portfolio-videos/Portfolio1.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio2.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio3.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio4.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio5.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio6.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio7.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio8.mp4" class="col-12 col-md-6 col-xl-4 pt-4" controls></video>
+                <video src="./portfolio-videos/Portfolio9.mp4"
+                    class="col-12 col-md-6 col-xl-4 pt-4 d-md-none d-lg-none d-xl-block" controls></video>
+            </div>
+
+        </div>
+    </div>
+    <!-- / PORTFOLIOLAR BO'LIMI -->
+
+
+
+
+
+    <!-- TAJRIBA BO'LIMI -->
+    <div class="container">
+        <div id="experience-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING IT SOHASIDAGI AMALIY ISH VA DASTURLASH TAJRIBAM.</h3>
+                <h3 class="section-main-info">
+                    Hozircha, men faqat "Code Camp"da taxminan 300 soatlik ish tajribasiga ega bo'ldim.
+                </h3>
+            </div>
+
+            <div class="col-11 col-lg-6 col-xl-6 col-xxl-6 img-thumbnail d-inline-block mt-3" id="section-texts-part"
+                style="float: left;">
+                <img src="./images/freecodecamp.png" alt="coventry" class="col-12">
+                <h3 class="section-info d-none d-lg-block d-xl-none">
+                    <span><i class="bi bi-exclamation-square-fill"></i> O'z sohangizni ko'rsatmalar orqali
+                        o'rganing</span> <br>
+                    <span><i class="bi bi-exclamation-square-fill"></i> Men ushbu kursni chin dildan tavsiya
+                        qilaman</span> <br>
+                    <span><i class="bi bi-exclamation-square-fill"></i> Sinab ko'ring:
+                        https://www.freecodecamp.org</span> <br>
+                </h3>
+            </div>
+
+            <div class="col-11 col-lg-5 col-xl-5 col-xxl-5 d-inline-block experience-section-2 mt-3"
+                id="section-texts-part">
+                <h3 class="section-position">
+                    "Code Camp"da tajriba orttirdim</h3>
+                <h3 class="section-info" style="width: 100%;">
+                    <button type="button" class="btn btn-success"><b>TAJRIBA</b></button>
+                    <span class="dodgerblue">2024 yilning yassi yoz faslida</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> Jozibador portfoliolarni yaratdim.</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> HTML & CSS ni chuqur o'rgandim.</span> <br>
+                    <span><i class="bi bi-patch-check-fill"></i> 300 soatlik tajribaga ega bo'ldim.</span> <br>
+                    <span class="d-xl-none d-xxl-block">
+                        <i class="bi bi-patch-check-fill"></i> Kursni tamomlash sertifikati. <br>
+                    </span>
+
+                    <br>
+                    <img src="./images/experience.png" alt="coventry" style="width: 100%;" class="d-inline-block">
+                </h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- / TAJRIBA BO'LIMI -->
+
+
+
+
+
+    <!-- XIZMATLAR BO'LIMI -->
+    <div class="container">
+        <div id="services-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MENING SHAXSIY VA KURSLARDA BAJARGAN XIZMATLARIM.</h3>
+                <h3 class="section-main-info">
+                    Men siz uchun jozibali veb-saytlar va animatsiyalar yaratishga tayyorman!
+                </h3>
+            </div>
+
+            <button type="button" id="section-texts-part" class="btn btn-primary"><b>
+                    <a href="https://t.me/Aabbdduulloohhh" style="text-decoration: none; color: #fff;" target="_blank">
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                        BOG'LANISHGA OCHIQMAN
+                        <i class="bi bi-telegram" style="color: #fff;"></i>
+                    </a>
+                </b></button><br><br>
+
+            <div class="row mt-3">
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-1.png" alt="loyihalar">
+                </div>
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-2.png" alt="loyihalar">
+                </div>
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-3.png" alt="loyihalar">
+                </div>
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-4.png" alt="loyihalar">
+                </div>
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-5.png" alt="loyihalar">
+                </div>
+
+                <div class="img-thumbnail col-12 col-md-6 col-xl-4">
+                    <img id="section-texts-part" src="./images/services-6.png" alt="loyihalar">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- / XIZMATLAR BO'LIMI -->
+
+
+
+
+
+    <!-- BOSHQA DASTURCHILAR BILAN BOG'LANISH BO'LIMI -->
+    <div class="container">
+        <div id="contact-others-section" class="container">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">O'ZBEKISTONDAGI IT SOHASIDAGI MASHHUR ODAMLARNI OSON KUZATIB BORING.
+                </h3>
+                <h3 class="section-main-info">
+                    Siz ularni osongina kuzatib, ularning onlayn samarali darslarini ijtimoiy platformalar orqali
+                    tomosha qilishingiz mumkin.
+                </h3>
+            </div><br>
+
+            <div class="row coders-section-box">
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div>
+                        <img class="col-3" src="./images/web-developers/saud-abdulwahed.jpg" alt="">
+                        <h3 class="coder-name col-12">S. Abdulvahed</h3> <br>
+                        <p class="coder-position col-11">Kiberxavfsizlik mutaxassisi</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/saudabdulwahed"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/saudabdulwahed"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SaudAbdulwahed"><i
+                                    class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/anvar-narzullayev.jpg" alt="">
+                        <h3 class="coder-name col-12">A. Narzullayev</h3> <br>
+                        <p class="coder-position col-11">Katta Dasturchi</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/sariqdev"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://facebook.com/sariqdev"><i class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@Sariqdev"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="https://github.com/anvarnarz"><i class="bi bi-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/botir-ziyatov.jpg" alt="">
+                        <h3 class="coder-name col-12">B. Ziyatov</h3> <br>
+                        <p class="coder-position col-11">Ma'lumotlar mutaxassisi</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/botirziyatov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/botirziyatov"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@BotirZiyatov"><i
+                                    class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/said-arislonov.jpg" alt="">
+                        <h3 class="coder-name col-12">S. Arislonov</h3> <br>
+                        <p class="coder-position col-11">IT Direktori</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/saidbekarislonov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://instagram.com/saidbekarislonov"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SaidbekArislonov"><i
+                                    class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/samar-badriddinov.png" alt="">
+                        <h3 class="coder-name col-12">S. Badriddinov</h3> <br>
+                        <p class="coder-position col-11">Full-Stack Dasturchi</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/samarbadriddinov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/samarbadriddinov"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@SamarBadriddinov"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="https://www.github.com/samarbadriddin0v"><i
+                                    class="bi bi-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 img-thumbnail"
+                    style="border: 3px solid #00b1f1; background-color: #f1f1f1; height: 15rem;">
+                    <div class="container-of-coders">
+                        <img class="col-3" src="./images/web-developers/ulugbek-samigjonov.jpg" alt="">
+                        <h3 class="coder-name col-12">U. Samigjonov</h3> <br>
+                        <p class="coder-position col-11">Veb Dasturchi</p>
+
+                        <div class="home-section-social-networks" style="margin-left: 1rem;">
+                            <a target="_blank" href="https://t.me/ulugbeksamigjonov"><i class="bi bi-telegram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/ulugbek-samigjonov"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/ulugbeksamigjonov"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/Ulugbek-Samigjonov-109436270953900"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@UlugbekSamigjonov"><i
+                                    class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- / BOSHQA DASTURCHILAR BILAN BOG'LANISH BO'LIMI -->
+
+
+
+
+
+    <!-- VOQEALAR BO'LIMI -->
+    <div class="container">
+        <div id="events-section">
+
+            <div id="section-texts-part">
+                <h3 class="section-main-position">MUHIM YAQINLASHAYOTGAN VOQEALARDAN OSON XABARDOR BO'LING.</h3>
+                <h3 class="section-main-info">Bu yerda ta'lim va ish faoliyatimdagi muhim yaqinlashayotgan voqealar
+                    haqida oson xabardor bo'lishingiz mumkin.</h3>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Voqea Sarlavhasi</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">
+                        Veb-saytga havola
+                    </a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Voqea sarlavhasi</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">
+                        Veb-saytga havola
+                    </a>
+                </div>
+            </div>
+
+            <div class="card img-thumbnail m-xl-4 m-xxl-4 d-inline-block col-10 col-md-5 col-lg-3"
+                style="margin-left: 2rem;">
+                <img src="./images/empty-gray-img.png" class="card-img-top" alt="coventry">
+                <div class="card-body">
+                    <h5 class="card-title">Voqea sarlavhasi</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eaque
+                        ipsum illo dolore.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">
+                        Veb-saytga havola
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- / VOQEALAR BO'LIMI -->
+
+
+
+
+
+    <!-- FOOTER BO'LIMI -->
+    <div class="col-12 mt-5" id="my-footer-section">
+
+        <button class="to-top-btn d-none d-lg-block d-xl-block d-xxl-block">
+            <a href="#home-section">TEPA</a></button>
+
+        <div class="footer-section-social-networks">
+            <a target="_blank" href="https://wa.me/998930523715" class="whatsapp d-none d-sm-block">
+                <i class="bi bi-whatsapp"></i></a>
+
+            <a target="_blank" href="https://t.me/Aabbdduulloohhh" class="telegram">
+                <i class="bi bi-telegram"></i></a>
+
+            <a target="_blank" href="mailto:aabbdudulloohhh@gmail.com" class="mail d-none d-sm-block">
+                <i class="bi bi-envelope"></i></a>
+
+            <a target="_blank" href="https://linkedin.com/in/abdulloh-abdulxamidov-26b0242a7" class="linkedin">
+                <i class="bi bi-linkedin"></i></a>
+
+            <a target="_blank" href="https://instagram.com/aabbdduulloohhh" class="instagram">
+                <i class="bi bi-instagram"></i></a>
+
+            <a target="_blank" href="https://facebook.com/AbdullohAbdulxamidov" class="facebook d-none d-sm-block">
+                <i class="bi bi-facebook"></i></a>
+
+            <a target="_blank" href="https://www.youtube.com/channel/UCBzLtY6ZeKjcVWqscxWNVug" class="youtube">
+                <i class="bi bi-youtube"></i></a>
+
+            <a target="_blank" href="https://github.com/AbdullohAbdulxamidov" class="github d-none d-sm-block">
+                <i class="bi bi-github"></i></a>
+        </div>
+
+        <div class="row" id="footer-menubar">
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>BOSH SAHIFA</li>
+                <li><a href="#latest-news-section">YANGILIKLAR</a></li>
+                <li><a href="#education-section">TA'LIM</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>YUTUQLAR</li>
+                <li><a href="#achievements-section">YUTUQLAR</a></li>
+                <li><a href="#my-way-into-it-section">SERTIFIKATLAR</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>IT DUNYOM</li>
+                <li><a href="#my-way-into-it-section">IT DUNYOM</a></li>
+                <li><a href="#portfolios-section">PORTFOLIOLAR</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>TAJRIBA</li>
+                <li><a href="#experience-section">TAJRIBA</a></li>
+                <li><a href="#services-section">XIZMATLAR</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li>UMUMIY</li>
+                <li><a href="#contact-others-section">DASTURCHILAR</a></li>
+                <li><a href="#events-section">VOQEALAR</a></li>
+            </ul>
+
+            <ul class="col-sm-5 col-md-4 col-xl-2">
+                <li style="color: orangered;">HAMKORLAR</li>
+                <li style="color: #14f500;">AGRO BANK</li>
+                <li style="color: #00b1f1;">COVENTRY U</li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom col-12">
+            Copyright &copy; 2024 Shaxsiy Veb-sayt
+        </div>
+
+    </div>
+    <!-- / FOOTER BO'LIMI -->
+
+
+
+
+
+
+
+
+    <!-- Java Script kodlari -->
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap Java Script bilan ulash -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tarjima qilishni ulash -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
